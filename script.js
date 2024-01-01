@@ -8,6 +8,9 @@ form.addEventListener("submit", event =>{
     PostData(myname.value,myPnumber.value)
     getAllUsersData()
 })
+window.addEventListener("DOMContentLoaded",()=>{
+    getAllUsersData();
+})
 
 // This method is used for posting the data to the crud-crud server                   
 function PostData(name, Pnumber){
